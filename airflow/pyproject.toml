@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "airflow"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+boto3 = "^1.35.57"
+pinecone-client = "^5.0.1"
+sentence-transformers = "^3.2.1"
+docling = "^2.4.2"
+apache-airflow = "^2.10.3"
+python-dotenv = "^1.0.1"
+psycopg2 = "^2.9.10"
+azure-storage-blob = "^12.23.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
