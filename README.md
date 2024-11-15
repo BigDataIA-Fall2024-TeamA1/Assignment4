@@ -69,7 +69,7 @@ The workflow diagram outlines the integration of major components including Apac
 │   ├── streamlit_app.py
 │   ├── poetry.lock
 │   └── pyproject.toml
-
+  ```
 ## Prerequisites
 
 **Poetry**: A Python dependency management tool.
@@ -77,7 +77,7 @@ The workflow diagram outlines the integration of major components including Apac
 - Verify installation:
   ```bash
   poetry --version
-  ```
+
 
 **Python 3.9+**: The project requires Python 3.9 or above.
 - Verify installation:
