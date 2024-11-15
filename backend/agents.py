@@ -1,3 +1,5 @@
+# streamlit_app.py
+
 import os
 import time
 import operator
@@ -68,10 +70,9 @@ def format_rag_contexts(matches: list):
     contexts = []
     for x in matches:
         text = (
-            f"Title: {x['metadata'].get('title', 'N/A')}\n"
-            f"Content: {x['metadata'].get('content', 'N/A')}\n"
             f"Publication: {x['metadata'].get('publication', 'N/A')}\n"
-            f"Related Papers: {x['metadata'].get('references', 'N/A')}\n"
+            f"Source File: {x['metadata'].get('source', 'N/A')}\n"
+            f"Extracted Text: {x['metadata'].get('text', 'N/A')}\n"
         )
         contexts.append(text)
     context_str = "\n---\n".join(contexts)
