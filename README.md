@@ -103,10 +103,12 @@ Ensure all prerequisites are installed before proceeding to deployment.
 
 3. **Running the Application**
    - Start FastAPI:
-     ```poetry run uvicorn backend.agents:app --reload
+     ```bash
+     poetry run uvicorn backend.agents:app --reload
      ```
    - Start Streamlit：
-      ```streamlit run frontend/streamlit_app.py
+      ```bash
+      streamlit run frontend/streamlit_app.py
      ```  
 
 4. **Access the Application**
