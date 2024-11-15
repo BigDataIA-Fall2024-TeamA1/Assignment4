@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "assignment4"
+version = "0.1.0"
+description = ""
+authors = ["shraddhabhandarkar3 <bhandarkar.s@northeastern.edu>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "3.10.15"
+streamlit = "^1.24.0"
+pandas = "^1.5.3" 
+numpy = "^1.24.0" 
+plotly = "^5.11.0"  
+matplotlib = "^3.6.2" 
+python-dotenv = "^0.21.0"
+sentence-transformers = "^2.2.2"
+pinecone-client = "^5.0.1"
+langgraph = "^0.2.45"
+langsmith = "^0.1.142"
+boto3 = "^1.35.57"
+tavily-python="*"
+langchain-anthropic = "^0.2.4"
+langchain = "^0.3.7"
+openai = "^1.54.4"
+pdfkit = "*"
+rich = "*"
+serpapi = "^0.1.5"
+google-search-results = "^2.4.2"
+langchain-openai = "^0.2.8"
+langchain-community = "^0.3.7"
+typing-extensions = "^4.12.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
