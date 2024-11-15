@@ -1,0 +1,19 @@
+[2024-11-12T15:11:21.088-0500] {processor.py:186} INFO - Started process (PID=45598) to work on /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-11-12T15:11:21.089-0500] {processor.py:914} INFO - Processing file /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py for tasks to queue
+[2024-11-12T15:11:21.091-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:11:21.091-0500] {dagbag.py:588} INFO - Filling up the DagBag from /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-11-12T15:11:22.071-0500] {processor.py:925} INFO - DAG(s) 'example_subdag_operator.section-1', 'example_subdag_operator.section-2', 'example_subdag_operator' retrieved from /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-11-12T15:11:22.697-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:11:22.696-0500] {override.py:1911} INFO - Created Permission View: can read on DAG:example_subdag_operator
+[2024-11-12T15:11:22.997-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:11:22.996-0500] {override.py:1911} INFO - Created Permission View: can delete on DAG:example_subdag_operator
+[2024-11-12T15:11:23.317-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:11:23.317-0500] {override.py:1911} INFO - Created Permission View: can edit on DAG:example_subdag_operator
+[2024-11-12T15:11:23.739-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:11:23.738-0500] {override.py:1911} INFO - Created Permission View: can read on DAG Run:example_subdag_operator
+[2024-11-12T15:11:24.049-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:11:24.049-0500] {override.py:1911} INFO - Created Permission View: can create on DAG Run:example_subdag_operator
+[2024-11-12T15:11:24.382-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:11:24.382-0500] {override.py:1911} INFO - Created Permission View: can delete on DAG Run:example_subdag_operator
+[2024-11-12T15:11:24.732-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:11:24.732-0500] {override.py:1911} INFO - Created Permission View: menu access on DAG Run:example_subdag_operator
+[2024-11-12T15:11:24.733-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:11:24.733-0500] {dag.py:3239} INFO - Sync 3 DAGs
+[2024-11-12T15:11:24.851-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:11:24.851-0500] {dag.py:3262} INFO - Creating ORM DAG for example_subdag_operator.section-2
+[2024-11-12T15:11:24.852-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:11:24.852-0500] {dag.py:3262} INFO - Creating ORM DAG for example_subdag_operator.section-1
+[2024-11-12T15:11:24.853-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:11:24.852-0500] {dag.py:3262} INFO - Creating ORM DAG for example_subdag_operator
+[2024-11-12T15:11:24.937-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:11:24.936-0500] {dag.py:4180} INFO - Setting next_dagrun for example_subdag_operator to 2022-01-01 00:00:00+00:00, run_after=2022-01-01 00:00:00+00:00
+[2024-11-12T15:11:24.938-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:11:24.938-0500] {dag.py:4180} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2024-11-12T15:11:24.939-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:11:24.939-0500] {dag.py:4180} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2024-11-12T15:11:25.173-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:11:25.173-0500] {process_utils.py:266} INFO - Waiting up to 5 seconds for processes to exit...

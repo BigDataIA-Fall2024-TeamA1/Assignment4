@@ -1,0 +1,22 @@
+[2024-11-12T15:09:41.448-0500] {processor.py:186} INFO - Started process (PID=45026) to work on /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_bash_decorator.py
+[2024-11-12T15:09:41.450-0500] {processor.py:914} INFO - Processing file /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_bash_decorator.py for tasks to queue
+[2024-11-12T15:09:41.452-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:41.452-0500] {dagbag.py:588} INFO - Filling up the DagBag from /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_bash_decorator.py
+[2024-11-12T15:09:41.464-0500] {processor.py:925} INFO - DAG(s) 'example_bash_decorator' retrieved from /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_bash_decorator.py
+[2024-11-12T15:09:42.842-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:42.842-0500] {override.py:1911} INFO - Created Permission View: can read on DAG:example_bash_decorator
+[2024-11-12T15:09:43.172-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:43.172-0500] {override.py:1911} INFO - Created Permission View: can delete on DAG:example_bash_decorator
+[2024-11-12T15:09:43.503-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:43.503-0500] {override.py:1911} INFO - Created Permission View: can edit on DAG:example_bash_decorator
+[2024-11-12T15:09:43.952-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:43.951-0500] {override.py:1911} INFO - Created Permission View: can read on DAG Run:example_bash_decorator
+[2024-11-12T15:09:44.269-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:44.268-0500] {override.py:1911} INFO - Created Permission View: can create on DAG Run:example_bash_decorator
+[2024-11-12T15:09:44.601-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:44.601-0500] {override.py:1911} INFO - Created Permission View: can delete on DAG Run:example_bash_decorator
+[2024-11-12T15:09:44.912-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:44.912-0500] {override.py:1911} INFO - Created Permission View: menu access on DAG Run:example_bash_decorator
+[2024-11-12T15:09:44.913-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:44.913-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-12T15:09:45.026-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:45.025-0500] {dag.py:3262} INFO - Creating ORM DAG for example_bash_decorator
+[2024-11-12T15:09:45.027-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:45.027-0500] {dag.py:4180} INFO - Setting next_dagrun for example_bash_decorator to None, run_after=None
+[2024-11-12T15:09:45.550-0500] {processor.py:208} INFO - Processing /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_bash_decorator.py took 4.107 seconds
+[2024-11-12T15:29:32.408-0500] {processor.py:186} INFO - Started process (PID=50586) to work on /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_bash_decorator.py
+[2024-11-12T15:29:32.410-0500] {processor.py:914} INFO - Processing file /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_bash_decorator.py for tasks to queue
+[2024-11-12T15:29:32.412-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:29:32.412-0500] {dagbag.py:588} INFO - Filling up the DagBag from /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_bash_decorator.py
+[2024-11-12T15:29:32.422-0500] {processor.py:925} INFO - DAG(s) 'example_bash_decorator' retrieved from /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_bash_decorator.py
+[2024-11-12T15:29:34.057-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:29:34.057-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-12T15:29:34.110-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:29:34.110-0500] {dag.py:4180} INFO - Setting next_dagrun for example_bash_decorator to None, run_after=None
+[2024-11-12T15:29:34.676-0500] {processor.py:208} INFO - Processing /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_bash_decorator.py took 2.272 seconds

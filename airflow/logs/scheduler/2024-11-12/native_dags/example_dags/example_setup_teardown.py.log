@@ -1,0 +1,22 @@
+[2024-11-12T15:10:35.451-0500] {processor.py:186} INFO - Started process (PID=45309) to work on /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2024-11-12T15:10:35.452-0500] {processor.py:914} INFO - Processing file /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2024-11-12T15:10:35.454-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:10:35.453-0500] {dagbag.py:588} INFO - Filling up the DagBag from /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2024-11-12T15:10:35.460-0500] {processor.py:925} INFO - DAG(s) 'example_setup_teardown' retrieved from /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2024-11-12T15:10:36.788-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:10:36.787-0500] {override.py:1911} INFO - Created Permission View: can read on DAG:example_setup_teardown
+[2024-11-12T15:10:37.106-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:10:37.105-0500] {override.py:1911} INFO - Created Permission View: can delete on DAG:example_setup_teardown
+[2024-11-12T15:10:37.416-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:10:37.416-0500] {override.py:1911} INFO - Created Permission View: can edit on DAG:example_setup_teardown
+[2024-11-12T15:10:37.832-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:10:37.831-0500] {override.py:1911} INFO - Created Permission View: can read on DAG Run:example_setup_teardown
+[2024-11-12T15:10:38.146-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:10:38.146-0500] {override.py:1911} INFO - Created Permission View: can create on DAG Run:example_setup_teardown
+[2024-11-12T15:10:38.458-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:10:38.458-0500] {override.py:1911} INFO - Created Permission View: can delete on DAG Run:example_setup_teardown
+[2024-11-12T15:10:38.760-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:10:38.760-0500] {override.py:1911} INFO - Created Permission View: menu access on DAG Run:example_setup_teardown
+[2024-11-12T15:10:38.761-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:10:38.761-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-12T15:10:38.879-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:10:38.879-0500] {dag.py:3262} INFO - Creating ORM DAG for example_setup_teardown
+[2024-11-12T15:10:38.880-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:10:38.880-0500] {dag.py:4180} INFO - Setting next_dagrun for example_setup_teardown to None, run_after=None
+[2024-11-12T15:10:39.435-0500] {processor.py:208} INFO - Processing /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py took 3.988 seconds
+[2024-11-12T15:29:48.633-0500] {processor.py:186} INFO - Started process (PID=50726) to work on /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2024-11-12T15:29:48.634-0500] {processor.py:914} INFO - Processing file /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2024-11-12T15:29:48.635-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:29:48.635-0500] {dagbag.py:588} INFO - Filling up the DagBag from /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2024-11-12T15:29:48.643-0500] {processor.py:925} INFO - DAG(s) 'example_setup_teardown' retrieved from /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py
+[2024-11-12T15:29:49.541-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:29:49.541-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-12T15:29:49.589-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:29:49.589-0500] {dag.py:4180} INFO - Setting next_dagrun for example_setup_teardown to None, run_after=None
+[2024-11-12T15:29:50.073-0500] {processor.py:208} INFO - Processing /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py took 1.444 seconds

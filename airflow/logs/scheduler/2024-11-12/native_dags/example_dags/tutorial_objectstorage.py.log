@@ -1,0 +1,22 @@
+[2024-11-12T15:09:31.971-0500] {processor.py:186} INFO - Started process (PID=44963) to work on /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2024-11-12T15:09:31.972-0500] {processor.py:914} INFO - Processing file /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/tutorial_objectstorage.py for tasks to queue
+[2024-11-12T15:09:31.974-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:31.974-0500] {dagbag.py:588} INFO - Filling up the DagBag from /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2024-11-12T15:09:31.981-0500] {processor.py:925} INFO - DAG(s) 'tutorial_objectstorage' retrieved from /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2024-11-12T15:09:33.328-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:33.328-0500] {override.py:1911} INFO - Created Permission View: can read on DAG:tutorial_objectstorage
+[2024-11-12T15:09:33.652-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:33.651-0500] {override.py:1911} INFO - Created Permission View: can delete on DAG:tutorial_objectstorage
+[2024-11-12T15:09:33.975-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:33.975-0500] {override.py:1911} INFO - Created Permission View: can edit on DAG:tutorial_objectstorage
+[2024-11-12T15:09:34.423-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:34.423-0500] {override.py:1911} INFO - Created Permission View: can read on DAG Run:tutorial_objectstorage
+[2024-11-12T15:09:34.756-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:34.756-0500] {override.py:1911} INFO - Created Permission View: can create on DAG Run:tutorial_objectstorage
+[2024-11-12T15:09:35.063-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:35.063-0500] {override.py:1911} INFO - Created Permission View: can delete on DAG Run:tutorial_objectstorage
+[2024-11-12T15:09:35.380-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:35.379-0500] {override.py:1911} INFO - Created Permission View: menu access on DAG Run:tutorial_objectstorage
+[2024-11-12T15:09:35.381-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:35.381-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-12T15:09:35.493-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:35.493-0500] {dag.py:3262} INFO - Creating ORM DAG for tutorial_objectstorage
+[2024-11-12T15:09:35.494-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:35.494-0500] {dag.py:4180} INFO - Setting next_dagrun for tutorial_objectstorage to None, run_after=None
+[2024-11-12T15:09:36.007-0500] {processor.py:208} INFO - Processing /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/tutorial_objectstorage.py took 4.041 seconds
+[2024-11-12T15:29:27.375-0500] {processor.py:186} INFO - Started process (PID=50537) to work on /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2024-11-12T15:29:27.376-0500] {processor.py:914} INFO - Processing file /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/tutorial_objectstorage.py for tasks to queue
+[2024-11-12T15:29:27.378-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:29:27.378-0500] {dagbag.py:588} INFO - Filling up the DagBag from /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2024-11-12T15:29:27.386-0500] {processor.py:925} INFO - DAG(s) 'tutorial_objectstorage' retrieved from /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2024-11-12T15:29:28.214-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:29:28.214-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-12T15:29:28.267-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:29:28.267-0500] {dag.py:4180} INFO - Setting next_dagrun for tutorial_objectstorage to None, run_after=None
+[2024-11-12T15:29:28.767-0500] {processor.py:208} INFO - Processing /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/tutorial_objectstorage.py took 1.396 seconds

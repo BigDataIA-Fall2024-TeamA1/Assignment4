@@ -1,0 +1,22 @@
+[2024-11-12T15:10:32.980-0500] {processor.py:186} INFO - Started process (PID=45294) to work on /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-11-12T15:10:32.981-0500] {processor.py:914} INFO - Processing file /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-11-12T15:10:32.983-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:10:32.983-0500] {dagbag.py:588} INFO - Filling up the DagBag from /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-11-12T15:10:32.990-0500] {processor.py:925} INFO - DAG(s) 'tutorial_dag' retrieved from /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-11-12T15:10:34.288-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:10:34.287-0500] {override.py:1911} INFO - Created Permission View: can read on DAG:tutorial_dag
+[2024-11-12T15:10:34.624-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:10:34.624-0500] {override.py:1911} INFO - Created Permission View: can delete on DAG:tutorial_dag
+[2024-11-12T15:10:34.937-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:10:34.936-0500] {override.py:1911} INFO - Created Permission View: can edit on DAG:tutorial_dag
+[2024-11-12T15:10:35.361-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:10:35.360-0500] {override.py:1911} INFO - Created Permission View: can read on DAG Run:tutorial_dag
+[2024-11-12T15:10:35.658-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:10:35.658-0500] {override.py:1911} INFO - Created Permission View: can create on DAG Run:tutorial_dag
+[2024-11-12T15:10:35.996-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:10:35.995-0500] {override.py:1911} INFO - Created Permission View: can delete on DAG Run:tutorial_dag
+[2024-11-12T15:10:36.309-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:10:36.309-0500] {override.py:1911} INFO - Created Permission View: menu access on DAG Run:tutorial_dag
+[2024-11-12T15:10:36.310-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:10:36.310-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-12T15:10:36.437-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:10:36.437-0500] {dag.py:3262} INFO - Creating ORM DAG for tutorial_dag
+[2024-11-12T15:10:36.439-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:10:36.439-0500] {dag.py:4180} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-11-12T15:10:36.970-0500] {processor.py:208} INFO - Processing /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py took 3.994 seconds
+[2024-11-12T15:29:48.157-0500] {processor.py:186} INFO - Started process (PID=50719) to work on /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-11-12T15:29:48.157-0500] {processor.py:914} INFO - Processing file /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-11-12T15:29:48.159-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:29:48.159-0500] {dagbag.py:588} INFO - Filling up the DagBag from /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-11-12T15:29:48.165-0500] {processor.py:925} INFO - DAG(s) 'tutorial_dag' retrieved from /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-11-12T15:29:48.985-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:29:48.985-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-12T15:29:49.031-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:29:49.031-0500] {dag.py:4180} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-11-12T15:29:49.541-0500] {processor.py:208} INFO - Processing /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py took 1.388 seconds

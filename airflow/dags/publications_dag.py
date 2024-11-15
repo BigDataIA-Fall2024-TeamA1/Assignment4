@@ -1,14 +1,15 @@
-# publications_dag.py
+# publications_data.py
 
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from datetime import datetime
-from data_processing import (
+from modules.data_processing import (
     download_publications,
     parsing_publications,
     embedding_and_upload_pinecone,
     delete_local_publications
 )
+
 
 default_args = {
     'owner': 'airflow',

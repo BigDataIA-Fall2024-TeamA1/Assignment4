@@ -1,0 +1,22 @@
+[2024-11-12T15:09:45.091-0500] {processor.py:186} INFO - Started process (PID=45045) to work on /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2024-11-12T15:09:45.093-0500] {processor.py:914} INFO - Processing file /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2024-11-12T15:09:45.095-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:45.095-0500] {dagbag.py:588} INFO - Filling up the DagBag from /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2024-11-12T15:09:45.108-0500] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2024-11-12T15:09:46.506-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:46.505-0500] {override.py:1911} INFO - Created Permission View: can read on DAG:example_task_group
+[2024-11-12T15:09:46.838-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:46.838-0500] {override.py:1911} INFO - Created Permission View: can delete on DAG:example_task_group
+[2024-11-12T15:09:47.165-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:47.165-0500] {override.py:1911} INFO - Created Permission View: can edit on DAG:example_task_group
+[2024-11-12T15:09:47.596-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:47.596-0500] {override.py:1911} INFO - Created Permission View: can read on DAG Run:example_task_group
+[2024-11-12T15:09:47.950-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:47.949-0500] {override.py:1911} INFO - Created Permission View: can create on DAG Run:example_task_group
+[2024-11-12T15:09:48.273-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:48.273-0500] {override.py:1911} INFO - Created Permission View: can delete on DAG Run:example_task_group
+[2024-11-12T15:09:48.583-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:48.582-0500] {override.py:1911} INFO - Created Permission View: menu access on DAG Run:example_task_group
+[2024-11-12T15:09:48.597-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:48.596-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-12T15:09:48.716-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:48.716-0500] {dag.py:3262} INFO - Creating ORM DAG for example_task_group
+[2024-11-12T15:09:48.717-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:48.717-0500] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2024-11-12T15:09:49.248-0500] {processor.py:208} INFO - Processing /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 4.160 seconds
+[2024-11-12T15:29:33.261-0500] {processor.py:186} INFO - Started process (PID=50592) to work on /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2024-11-12T15:29:33.262-0500] {processor.py:914} INFO - Processing file /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2024-11-12T15:29:33.264-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:29:33.264-0500] {dagbag.py:588} INFO - Filling up the DagBag from /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2024-11-12T15:29:33.271-0500] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2024-11-12T15:29:34.076-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:29:34.076-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-12T15:29:34.134-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:29:34.134-0500] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2024-11-12T15:29:34.676-0500] {processor.py:208} INFO - Processing /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 1.420 seconds

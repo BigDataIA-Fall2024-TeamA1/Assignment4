@@ -1,0 +1,22 @@
+[2024-11-12T15:10:49.274-0500] {processor.py:186} INFO - Started process (PID=45394) to work on /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py
+[2024-11-12T15:10:49.275-0500] {processor.py:914} INFO - Processing file /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py for tasks to queue
+[2024-11-12T15:10:49.277-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:10:49.277-0500] {dagbag.py:588} INFO - Filling up the DagBag from /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py
+[2024-11-12T15:10:49.287-0500] {processor.py:925} INFO - DAG(s) 'example_sla_dag' retrieved from /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py
+[2024-11-12T15:10:50.638-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:10:50.638-0500] {override.py:1911} INFO - Created Permission View: can read on DAG:example_sla_dag
+[2024-11-12T15:10:50.963-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:10:50.962-0500] {override.py:1911} INFO - Created Permission View: can delete on DAG:example_sla_dag
+[2024-11-12T15:10:51.277-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:10:51.277-0500] {override.py:1911} INFO - Created Permission View: can edit on DAG:example_sla_dag
+[2024-11-12T15:10:51.676-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:10:51.675-0500] {override.py:1911} INFO - Created Permission View: can read on DAG Run:example_sla_dag
+[2024-11-12T15:10:51.980-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:10:51.980-0500] {override.py:1911} INFO - Created Permission View: can create on DAG Run:example_sla_dag
+[2024-11-12T15:10:52.517-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:10:52.517-0500] {override.py:1911} INFO - Created Permission View: can delete on DAG Run:example_sla_dag
+[2024-11-12T15:10:52.836-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:10:52.836-0500] {override.py:1911} INFO - Created Permission View: menu access on DAG Run:example_sla_dag
+[2024-11-12T15:10:52.837-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:10:52.837-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-12T15:10:52.955-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:10:52.955-0500] {dag.py:3262} INFO - Creating ORM DAG for example_sla_dag
+[2024-11-12T15:10:53.056-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:10:53.056-0500] {dag.py:4180} INFO - Setting next_dagrun for example_sla_dag to 2024-11-12 20:08:00+00:00, run_after=2024-11-12 20:10:00+00:00
+[2024-11-12T15:10:53.562-0500] {processor.py:208} INFO - Processing /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py took 4.293 seconds
+[2024-11-12T15:29:53.794-0500] {processor.py:186} INFO - Started process (PID=50781) to work on /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py
+[2024-11-12T15:29:53.795-0500] {processor.py:914} INFO - Processing file /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py for tasks to queue
+[2024-11-12T15:29:53.797-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:29:53.797-0500] {dagbag.py:588} INFO - Filling up the DagBag from /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py
+[2024-11-12T15:29:53.806-0500] {processor.py:925} INFO - DAG(s) 'example_sla_dag' retrieved from /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py
+[2024-11-12T15:29:54.688-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:29:54.687-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-12T15:29:54.816-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:29:54.816-0500] {dag.py:4180} INFO - Setting next_dagrun for example_sla_dag to 2024-11-12 20:26:00+00:00, run_after=2024-11-12 20:28:00+00:00
+[2024-11-12T15:29:55.304-0500] {processor.py:208} INFO - Processing /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py took 1.515 seconds

@@ -1,0 +1,22 @@
+[2024-11-12T15:09:05.079-0500] {processor.py:186} INFO - Started process (PID=44763) to work on /mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment4/airflow/dags/publications_dag.py
+[2024-11-12T15:09:05.080-0500] {processor.py:914} INFO - Processing file /mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment4/airflow/dags/publications_dag.py for tasks to queue
+[2024-11-12T15:09:05.082-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:05.082-0500] {dagbag.py:588} INFO - Filling up the DagBag from /mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment4/airflow/dags/publications_dag.py
+[2024-11-12T15:09:05.216-0500] {processor.py:925} INFO - DAG(s) 'publications_processing_dag' retrieved from /mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment4/airflow/dags/publications_dag.py
+[2024-11-12T15:09:06.593-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:06.592-0500] {override.py:1911} INFO - Created Permission View: can read on DAG:publications_processing_dag
+[2024-11-12T15:09:06.954-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:06.954-0500] {override.py:1911} INFO - Created Permission View: can delete on DAG:publications_processing_dag
+[2024-11-12T15:09:07.256-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:07.256-0500] {override.py:1911} INFO - Created Permission View: can edit on DAG:publications_processing_dag
+[2024-11-12T15:09:07.672-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:07.671-0500] {override.py:1911} INFO - Created Permission View: can read on DAG Run:publications_processing_dag
+[2024-11-12T15:09:07.992-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:07.992-0500] {override.py:1911} INFO - Created Permission View: can create on DAG Run:publications_processing_dag
+[2024-11-12T15:09:08.315-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:08.314-0500] {override.py:1911} INFO - Created Permission View: can delete on DAG Run:publications_processing_dag
+[2024-11-12T15:09:08.632-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:08.631-0500] {override.py:1911} INFO - Created Permission View: menu access on DAG Run:publications_processing_dag
+[2024-11-12T15:09:08.638-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:08.638-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-12T15:09:08.763-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:08.763-0500] {dag.py:3262} INFO - Creating ORM DAG for publications_processing_dag
+[2024-11-12T15:09:08.845-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:08.845-0500] {dag.py:4180} INFO - Setting next_dagrun for publications_processing_dag to 2024-11-11 00:00:00+00:00, run_after=2024-11-12 00:00:00+00:00
+[2024-11-12T15:09:09.367-0500] {processor.py:208} INFO - Processing /mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment4/airflow/dags/publications_dag.py took 4.292 seconds
+[2024-11-12T15:29:13.393-0500] {processor.py:186} INFO - Started process (PID=50399) to work on /mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment4/airflow/dags/publications_dag.py
+[2024-11-12T15:29:13.395-0500] {processor.py:914} INFO - Processing file /mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment4/airflow/dags/publications_dag.py for tasks to queue
+[2024-11-12T15:29:13.397-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:29:13.397-0500] {dagbag.py:588} INFO - Filling up the DagBag from /mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment4/airflow/dags/publications_dag.py
+[2024-11-12T15:29:13.461-0500] {processor.py:925} INFO - DAG(s) 'publications_processing_dag' retrieved from /mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment4/airflow/dags/publications_dag.py
+[2024-11-12T15:29:14.397-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:29:14.397-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-12T15:29:14.524-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:29:14.524-0500] {dag.py:4180} INFO - Setting next_dagrun for publications_processing_dag to 2024-11-11 00:00:00+00:00, run_after=2024-11-12 00:00:00+00:00
+[2024-11-12T15:29:15.050-0500] {processor.py:208} INFO - Processing /mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment4/airflow/dags/publications_dag.py took 1.661 seconds
