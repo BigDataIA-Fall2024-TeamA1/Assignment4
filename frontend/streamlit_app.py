@@ -1,65 +1,91 @@
-# streamlit_app.py
+# streamlit.py
+
+import sys
+import os
+
+# 获取当前文件的目录
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+# 将项目的根目录添加到 Python 路径中
+project_root = os.path.abspath(os.path.join(current_dir, '..'))
+if project_root not in sys.path:
+    sys.path.append(project_root)
+
+# 现在可以从 backend 目录中导入 agents 模块
+from backend.agents import ask_question
 
 import streamlit as st
-import requests
 
-API_BASE_URL = "http://localhost:8000/publications"
+st.title("学术研究助手")
 
-def main():
-    st.title("Publication Query Application")
+# 会话状态存储对话历史
+if "conversation" not in st.session_state:
+    st.session_state.conversation = []
 
-    # Fetch publications from the FastAPI service
-    try:
-        response = requests.get(API_BASE_URL)
-        if response.status_code == 200:
-            publications = response.json().get("publications", [])
-        else:
-            st.error(f"Failed to retrieve publications: {response.status_code} - {response.text}")
-            return
-    except Exception as e:
-        st.error(f"An error occurred while fetching publications: {str(e)}")
-        return
+# 文档选择（假设您有一个文档列表）
+# 您可以根据实际情况从数据库或文件中读取文档列表
+documents = ["Document1", "Document2", "Document3"]
+selected_document = st.selectbox("请选择要研究的文档：", documents)
 
-    if not publications:
-        st.warning("No publications found.")
-        return
+st.write(f"您选择的文档是：{selected_document}")
 
-    # Create a dropdown list to select a publication
-    selected_publication = st.selectbox("Select a publication", publications)
+# 问题输入
+question = st.text_input("请针对选定的文档提问：")
 
-    st.write(f"You selected: {selected_publication}")
+if st.button("提交"):
+    if question:
+        with st.spinner("思考中..."):
+            # 将文档上下文添加到问题中
+            question_with_context = f"Document: {selected_document}\nQuestion: {question}"
+            answer = ask_question(question_with_context)
+            st.session_state.conversation.append((question, answer))
+            st.success("回答已生成！")
+    else:
+        st.warning("请输入您的问题。")
 
-    query = st.text_input("Enter your query")
+# 显示对话历史
+st.subheader("对话历史")
+for i, (q, a) in enumerate(st.session_state.conversation):
+    st.write(f"**问题 {i+1}：** {q}")
+    st.write(f"**回答 {i+1}：** {a}")
 
-    # Choose an agent (tool)
-    agent_options = ["rag_search_filter", "web_search"]
-    selected_agent = st.selectbox("Select an agent", agent_options)
+# 保存研究会话结果
+if st.button("保存会话"):
+    import json
+    session_data = {
+        "document": selected_document,
+        "conversation": st.session_state.conversation
+    }
+    with open("session_results.json", "w", encoding="utf-8") as f:
+        json.dump(session_data, f, ensure_ascii=False, indent=4)
+    st.success("会话已成功保存！")
 
-    if st.button("Submit Query"):
-        # Build request data
-        data = {
-            "input": query,
-            "publication": selected_publication if selected_agent == "rag_search_filter" else None
-        }
-        try:
-            # Send request to FastAPI service
-            response = requests.post("http://localhost:8000/query", json=data)
-            if response.status_code == 200:
-                report = response.json()
-                st.subheader("Introduction")
-                st.write(report["introduction"])
-                st.subheader("Research Steps")
-                st.write(report["research_steps"])
-                st.subheader("Main Body")
-                st.write(report["main_body"])
-                st.subheader("Conclusion")
-                st.write(report["conclusion"])
-                st.subheader("Sources")
-                st.write(report["sources"])
-            else:
-                st.error(f"Request failed: {response.status_code} - {response.text}")
-        except Exception as e:
-            st.error(f"An error occurred: {str(e)}")
+# 导出为专业的 PDF 报告
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
+from reportlab.lib.styles import getSampleStyleSheet
 
-if __name__ == "__main__":
-    main()
+if st.button("导出为 PDF"):
+    from io import BytesIO
+
+    buffer = BytesIO()
+    doc = SimpleDocTemplate(buffer)
+    styles = getSampleStyleSheet()
+    elements = []
+
+    elements.append(Paragraph(f"关于 {selected_document} 的研究报告", styles['Title']))
+    elements.append(Spacer(1, 12))
+
+    for i, (q, a) in enumerate(st.session_state.conversation):
+        elements.append(Paragraph(f"问题 {i+1}：{q}", styles['Heading2']))
+        elements.append(Paragraph(f"回答 {i+1}：{a}", styles['Normal']))
+        elements.append(Spacer(1, 12))
+
+    doc.build(elements)
+
+    buffer.seek(0)
+    st.download_button(
+        label="下载 PDF 报告",
+        data=buffer,
+        file_name="research_report.pdf",
+        mime="application/pdf"
+    )
