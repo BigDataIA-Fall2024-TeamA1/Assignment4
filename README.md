@@ -126,7 +126,7 @@ Ensure all prerequisites are installed before proceeding to deployment.
 
 ## Demonstration Video
 
-[Click here to watch the video demonstration]((https://youtu.be/Mjl5BxCsVrY))
+[Click here to watch the video demonstration](https://youtu.be/Mjl5BxCsVrY)
 
 ## Codelabs Documentation
 
