@@ -126,10 +126,10 @@ Ensure all prerequisites are installed before proceeding to deployment.
 
 ## Demonstration Video
 
-[Click here to watch the video demonstration](https://youtu.be/MyrS6RYSmA4)
+[Click here to watch the video demonstration]([https://youtu.be/MyrS6RYSmA4](https://youtu.be/Mjl5BxCsVrY))
 
 ## Codelabs Documentation
 
-[Click here to view the Codelabs documentation](https://codelabs-preview.appspot.com/?file_id=1gBQts95I9VOnikyCroLEi9CNN_CU3dvoj7Q-2rhd6xU/edit?tab=t.0#0)
+[Click here to view the Codelabs documentation]([https://codelabs-preview.appspot.com/?file_id=1gBQts95I9VOnikyCroLEi9CNN_CU3dvoj7Q-2rhd6xU/edit?tab=t.0#0](https://codelabs-preview.appspot.com/?file_id=1gBQts95I9VOnikyCroLEi9CNN_CU3dvoj7Q-2rhd6xU/edit?tab=t.0#3))
 
 
