@@ -1,0 +1,15 @@
+[2024-11-12T15:11:14.148-0500] {processor.py:186} INFO - Started process (PID=45556) to work on /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py
+[2024-11-12T15:11:14.152-0500] {processor.py:914} INFO - Processing file /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py for tasks to queue
+[2024-11-12T15:11:14.156-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:11:14.155-0500] {dagbag.py:588} INFO - Filling up the DagBag from /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py
+[2024-11-12T15:11:14.167-0500] {processor.py:925} INFO - DAG(s) 'latest_only_with_trigger' retrieved from /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py
+[2024-11-12T15:11:15.504-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:11:15.504-0500] {override.py:1911} INFO - Created Permission View: can read on DAG:latest_only_with_trigger
+[2024-11-12T15:11:15.821-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:11:15.821-0500] {override.py:1911} INFO - Created Permission View: can delete on DAG:latest_only_with_trigger
+[2024-11-12T15:11:16.170-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:11:16.169-0500] {override.py:1911} INFO - Created Permission View: can edit on DAG:latest_only_with_trigger
+[2024-11-12T15:11:16.608-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:11:16.608-0500] {override.py:1911} INFO - Created Permission View: can read on DAG Run:latest_only_with_trigger
+[2024-11-12T15:11:16.944-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:11:16.944-0500] {override.py:1911} INFO - Created Permission View: can create on DAG Run:latest_only_with_trigger
+[2024-11-12T15:11:17.269-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:11:17.269-0500] {override.py:1911} INFO - Created Permission View: can delete on DAG Run:latest_only_with_trigger
+[2024-11-12T15:11:17.610-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:11:17.610-0500] {override.py:1911} INFO - Created Permission View: menu access on DAG Run:latest_only_with_trigger
+[2024-11-12T15:11:17.612-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:11:17.612-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-12T15:11:17.745-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:11:17.745-0500] {dag.py:3262} INFO - Creating ORM DAG for latest_only_with_trigger
+[2024-11-12T15:11:17.829-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:11:17.829-0500] {dag.py:4180} INFO - Setting next_dagrun for latest_only_with_trigger to 2024-11-12 16:00:00+00:00, run_after=2024-11-12 20:00:00+00:00
+[2024-11-12T15:11:18.393-0500] {processor.py:208} INFO - Processing /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py took 4.251 seconds

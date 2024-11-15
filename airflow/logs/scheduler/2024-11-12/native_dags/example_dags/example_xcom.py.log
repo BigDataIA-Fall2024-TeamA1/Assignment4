@@ -1,0 +1,22 @@
+[2024-11-12T15:09:18.921-0500] {processor.py:186} INFO - Started process (PID=44878) to work on /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2024-11-12T15:09:18.922-0500] {processor.py:914} INFO - Processing file /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2024-11-12T15:09:18.924-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:18.924-0500] {dagbag.py:588} INFO - Filling up the DagBag from /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2024-11-12T15:09:18.933-0500] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2024-11-12T15:09:20.156-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:20.155-0500] {override.py:1911} INFO - Created Permission View: can read on DAG:example_xcom
+[2024-11-12T15:09:20.446-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:20.446-0500] {override.py:1911} INFO - Created Permission View: can delete on DAG:example_xcom
+[2024-11-12T15:09:20.741-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:20.740-0500] {override.py:1911} INFO - Created Permission View: can edit on DAG:example_xcom
+[2024-11-12T15:09:21.122-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:21.122-0500] {override.py:1911} INFO - Created Permission View: can read on DAG Run:example_xcom
+[2024-11-12T15:09:21.411-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:21.411-0500] {override.py:1911} INFO - Created Permission View: can create on DAG Run:example_xcom
+[2024-11-12T15:09:21.713-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:21.712-0500] {override.py:1911} INFO - Created Permission View: can delete on DAG Run:example_xcom
+[2024-11-12T15:09:22.007-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:22.006-0500] {override.py:1911} INFO - Created Permission View: menu access on DAG Run:example_xcom
+[2024-11-12T15:09:22.008-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:22.008-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-12T15:09:22.105-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:22.105-0500] {dag.py:3262} INFO - Creating ORM DAG for example_xcom
+[2024-11-12T15:09:22.176-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:09:22.176-0500] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2024-11-12T15:09:22.665-0500] {processor.py:208} INFO - Processing /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 3.749 seconds
+[2024-11-12T15:29:21.420-0500] {processor.py:186} INFO - Started process (PID=50484) to work on /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2024-11-12T15:29:21.421-0500] {processor.py:914} INFO - Processing file /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2024-11-12T15:29:21.422-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:29:21.422-0500] {dagbag.py:588} INFO - Filling up the DagBag from /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2024-11-12T15:29:21.429-0500] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2024-11-12T15:29:22.270-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:29:22.270-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-12T15:29:22.412-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:29:22.411-0500] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2024-11-12T15:29:22.962-0500] {processor.py:208} INFO - Processing /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 1.546 seconds

@@ -1,14 +1,14 @@
-import os
-import boto3
-from docling.document_converter import DocumentConverter
-from pinecone import Pinecone, ServerlessSpec
-from sentence_transformers import SentenceTransformer
-import shutil
-from dotenv import load_dotenv
+# data_processing.py
 
-load_dotenv()
+import os
+import shutil  # Standard library imports can remain at the module level
+import time
 
 def download_publications(**kwargs):
+    from dotenv import load_dotenv
+    load_dotenv()
+    import boto3
+
     # Access AWS credentials from environment variables
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
@@ -45,6 +45,7 @@ def download_publications(**kwargs):
 
 def parsing_publications(**kwargs):
     import traceback
+    from docling.document_converter import DocumentConverter
 
     # Paths
     pdf_folder = '/tmp/downloaded_pdfs'
@@ -79,35 +80,79 @@ def parsing_publications(**kwargs):
                 traceback.print_exc()
 
 def embedding_and_upload_pinecone(**kwargs):
-    # Access Pinecone credentials from environment variables
+    from openai import OpenAI
+    from pinecone import Pinecone, ServerlessSpec
+
+    # Access OpenAI and Pinecone credentials from environment variables
+    OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY')
     PINECONE_API_KEY = os.environ.get('PINECONE_API_KEY')
     PINECONE_INDEX_NAME = os.environ.get('PINECONE_INDEX_NAME')
+    PINECONE_ENVIRONMENT = os.environ.get('PINECONE_ENVIRONMENT', 'us-east1-gcp')
+
+    # Validate API keys
+    if not OPENAI_API_KEY:
+        raise ValueError("OPENAI_API_KEY environment variable not set.")
+    if not PINECONE_API_KEY:
+        raise ValueError("PINECONE_API_KEY environment variable not set.")
+
+    # Initialize OpenAI client
+    client = OpenAI(api_key=OPENAI_API_KEY)
 
     # Initialize Pinecone
-    pc = Pinecone(api_key=PINECONE_API_KEY)
+    try:
+        pc = Pinecone(api_key=PINECONE_API_KEY)
+    except Exception as e:
+        print(f"Error initializing Pinecone: {e}")
+        return
 
-    # Check if index exists
-    if PINECONE_INDEX_NAME not in pc.list_indexes():
-        print(f"Creating new index: {PINECONE_INDEX_NAME}")
+    index_name = PINECONE_INDEX_NAME
+
+    # Delete existing index if it exists
+    try:
+        if index_name in pc.list_indexes():
+            print(f"Deleting existing index: {index_name}")
+            pc.delete_index(index_name)
+            time.sleep(1)  # Wait for the index to be deleted
+    except Exception as e:
+        print(f"Error deleting existing index: {e}")
+        return
+
+    # Create a new index with the correct dimension
+    try:
         pc.create_index(
-            name=PINECONE_INDEX_NAME,
-            dimension=384,  # Adjust dimension as per your model
+            name=index_name,
+            dimension=1536,  # OpenAI embedding dimension
             metric='cosine',
             spec=ServerlessSpec(
-                cloud='aws',
-                region='us-east-1'  # Choose an appropriate region
+                cloud='aws',  # or 'gcp', depending on your Pinecone setup
+                region='us-east-1'  # replace with your desired region
             )
         )
-    else:
-        print(f"Index {PINECONE_INDEX_NAME} already exists. Using existing index.")
+    except Exception as e:
+        print(f"Error creating new index: {e}")
+        return
 
-    index = pc.Index(PINECONE_INDEX_NAME)
+    try:
+        index = pc.Index(index_name)
+    except Exception as e:
+        print(f"Error accessing index: {e}")
+        return
 
     # Paths
     markdown_folder = '/tmp/markdown_files'
 
-    # Load embedding model
-    model = SentenceTransformer('all-MiniLM-L6-v2')  # You can choose a different model if needed
+    # Function to get embeddings using OpenAI's API
+    def get_embedding(text):
+        try:
+            response = client.embeddings.create(
+                input=text,
+                model='text-embedding-ada-002'  # Use the latest embedding model
+            )
+            embedding = response.data[0].embedding
+            return embedding
+        except Exception as e:
+            print(f"Error getting embedding: {e}")
+            return [0] * 1536  # Return a zero vector in case of error
 
     # Set batch size
     BATCH_SIZE = 100  # You can adjust this value based on your needs
@@ -121,7 +166,11 @@ def embedding_and_upload_pinecone(**kwargs):
             # Split content into paragraphs
             texts = markdown_content.split('\n\n')
 
-            embeddings = model.encode(texts)
+            embeddings = []
+            for text in texts:
+                embedding = get_embedding(text)
+                embeddings.append(embedding)
+                time.sleep(0.2)  # Add delay to respect rate limits
 
             # Prepare data for Pinecone
             vectors = []
@@ -133,7 +182,7 @@ def embedding_and_upload_pinecone(**kwargs):
                     'source': md_file,
                     'text': texts[idx]
                 }
-                vectors.append((vector_id, embedding.tolist(), metadata))
+                vectors.append((vector_id, embedding, metadata))
 
             # Upsert vectors to Pinecone in batches
             for i in range(0, len(vectors), BATCH_SIZE):
@@ -143,13 +192,12 @@ def embedding_and_upload_pinecone(**kwargs):
                     print(f'Uploaded batch {i//BATCH_SIZE + 1} of embeddings for {md_file}')
                 except Exception as e:
                     print(f"Error uploading batch {i//BATCH_SIZE + 1} for {md_file}: {str(e)}")
-                    # You might want to implement a retry mechanism here
+                    # Implement retry mechanism if needed
 
             print(f'Finished uploading all embeddings for {md_file}')
 
-    # No need to close the index
-
 def delete_local_publications(**kwargs):
+    import shutil  # If not imported at the module level
     # Define the paths used in the previous tasks
     pdf_folder = '/tmp/downloaded_pdfs'
     markdown_folder = '/tmp/markdown_files'
@@ -164,18 +212,18 @@ def delete_local_publications(**kwargs):
         shutil.rmtree(markdown_folder)
         print(f'Deleted folder {markdown_folder}')
 
-# def main():
-#     print("Starting download of publications...")
-#     download_publications()
+def main():
+    print("Starting download of publications...")
+    download_publications()
     
-#     print("Parsing downloaded publications...")
-#     parsing_publications()
+    print("Parsing downloaded publications...")
+    parsing_publications()
     
-#     print("Embedding and uploading to Pinecone...")
-#     embedding_and_upload_pinecone()
+    print("Embedding and uploading to Pinecone...")
+    embedding_and_upload_pinecone()
     
-#     print("Cleaning up local files...")
-#     delete_local_publications()
+    print("Cleaning up local files...")
+    delete_local_publications()
 
-# if __name__ == "__main__":
-#     main()
+if __name__ == "__main__":
+    main()

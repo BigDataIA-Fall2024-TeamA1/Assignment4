@@ -1,0 +1,16 @@
+[2024-11-12T15:11:18.698-0500] {processor.py:186} INFO - Started process (PID=45584) to work on /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_python_decorator.py
+[2024-11-12T15:11:18.699-0500] {processor.py:914} INFO - Processing file /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_python_decorator.py for tasks to queue
+[2024-11-12T15:11:18.701-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:11:18.701-0500] {dagbag.py:588} INFO - Filling up the DagBag from /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_python_decorator.py
+[2024-11-12T15:11:18.820-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:11:18.820-0500] {example_python_decorator.py:80} WARNING - The virtalenv_python example task requires virtualenv, please install it.
+[2024-11-12T15:11:18.822-0500] {processor.py:925} INFO - DAG(s) 'example_python_decorator' retrieved from /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_python_decorator.py
+[2024-11-12T15:11:20.156-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:11:20.155-0500] {override.py:1911} INFO - Created Permission View: can read on DAG:example_python_decorator
+[2024-11-12T15:11:20.503-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:11:20.503-0500] {override.py:1911} INFO - Created Permission View: can delete on DAG:example_python_decorator
+[2024-11-12T15:11:20.834-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:11:20.834-0500] {override.py:1911} INFO - Created Permission View: can edit on DAG:example_python_decorator
+[2024-11-12T15:11:21.267-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:11:21.267-0500] {override.py:1911} INFO - Created Permission View: can read on DAG Run:example_python_decorator
+[2024-11-12T15:11:21.616-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:11:21.616-0500] {override.py:1911} INFO - Created Permission View: can create on DAG Run:example_python_decorator
+[2024-11-12T15:11:21.934-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:11:21.934-0500] {override.py:1911} INFO - Created Permission View: can delete on DAG Run:example_python_decorator
+[2024-11-12T15:11:22.260-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:11:22.260-0500] {override.py:1911} INFO - Created Permission View: menu access on DAG Run:example_python_decorator
+[2024-11-12T15:11:22.262-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:11:22.262-0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-12T15:11:22.389-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:11:22.389-0500] {dag.py:3262} INFO - Creating ORM DAG for example_python_decorator
+[2024-11-12T15:11:22.390-0500] {logging_mixin.py:190} INFO - [2024-11-12T15:11:22.390-0500] {dag.py:4180} INFO - Setting next_dagrun for example_python_decorator to None, run_after=None
+[2024-11-12T15:11:22.944-0500] {processor.py:208} INFO - Processing /home/patrick/.cache/pypoetry/virtualenvs/airflow-DG3uFiME-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_python_decorator.py took 4.250 seconds
